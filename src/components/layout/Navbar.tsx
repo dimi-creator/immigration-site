@@ -14,7 +14,7 @@ const navItems = [
   { href: '/about', label: 'À propos' },
   { href: '/services', label: 'Services' },
   { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  // { href: '/contact', label: 'Contact' },
 ];
 
 export function Navbar() {

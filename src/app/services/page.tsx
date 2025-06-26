@@ -8,7 +8,7 @@ export default function ServicesPage() {
       <section className="relative py-20 md:py-32 bg-primary text-primary-foreground text-center">
         <div className="absolute inset-0">
             <Image 
-              src="https://placehold.co/1600x400.png" 
+              src='/Ontario (1).jpg' 
               alt="Diverse professionals" 
               layout="fill" 
               objectFit="cover" 

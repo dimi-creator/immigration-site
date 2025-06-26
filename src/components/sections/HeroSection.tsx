@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <div className="relative h-[calc(100vh-5rem)] min-h-[500px] md:min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="https://placehold.co/1920x1080.png"
+        src="/SITE.jpg"
         alt="Paysage canadien en arrière-plan"
         layout="fill"
         objectFit="cover"

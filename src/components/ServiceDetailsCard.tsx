@@ -27,7 +27,7 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
               data-ai-hint={service.dataAiHint}
             />
           )}
-           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-none"></div>
         </div>
         <div className="flex flex-col p-6 md:p-10 bg-card">
           <CardHeader className="p-0 mb-4">
@@ -58,22 +58,23 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
           </CardContent>
           <div className="mt-auto pt-6 border-t border-border/50">
             <p className="text-sm text-muted-foreground mb-4">
-              Intéressé(e) par ce service ? Contactez-nous pour une consultation ou pour démarrer votre projet.
+              Intéressé(e) par ce service ? Cliquez ci-dessous pour démarrer la discussion avec nous sur WhatsApp.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground flex-1 group">
-                <Link href={`/contact?service=${service.id}`}>
-                  Demander une consultation <Phone className="ml-2 h-5 w-5 group-hover:animate-ping duration-1000" />
+            <div className="flex">
+              <Button
+                asChild
+                size="lg"
+                className="bg-green-600 hover:bg-green-700 text-white flex-1"
+              >
+                <Link
+                  href={`https://wa.me/237680345955?text=Bonjour%2C+je+suis+intéressé(e)+par+le+service+${encodeURIComponent(service.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contacter par WhatsApp 💬
                 </Link>
               </Button>
-              {/* Placeholder for direct payment button */}
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground flex-1" disabled>
-                 Procéder au paiement (Bientôt)
-              </Button>
             </div>
-            <p className="text-xs text-muted-foreground mt-3 text-center">
-              L'intégration du paiement Mobile Money / Orange Money est prévue.
-            </p>
           </div>
         </div>
       </div>

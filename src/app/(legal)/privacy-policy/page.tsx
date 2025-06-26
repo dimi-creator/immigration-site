@@ -53,7 +53,7 @@ export default function PrivacyPolicyPage() {
             <li>Le droit à la portabilité de vos données.</li>
             <li>Le droit de retirer votre consentement à tout moment.</li>
           </ul>
-          <p>Pour exercer ces droits, veuillez nous contacter à <a href="mailto:privacy@mapleleafpathways.com" className="text-accent hover:underline">privacy@mapleleafpathways.com</a>.</p>
+          <p>Pour exercer ces droits, veuillez nous contacter à <a href="mailto:contact.aspev24@gmail.com" className="text-accent hover:underline">contact.aspev24@gmail.com</a>.</p>
           
           <h2 className="font-headline mt-6">Modifications de cette politique</h2>
           <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous encourageons à consulter cette page régulièrement pour prendre connaissance des éventuelles modifications. La date de la dernière mise à jour sera indiquée en bas de cette page.</p>
@@ -61,8 +61,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="font-headline mt-6">Nous contacter</h2>
           <p>Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à :</p>
           <p>Maple Leaf Pathways<br/>
-          123 Rue Imaginaire, Ottawa, ON K1P 1J1, Canada<br/>
-          <a href="mailto:privacy@mapleleafpathways.com" className="text-accent hover:underline">privacy@mapleleafpathways.com</a></p>
+          <br/>
+          <a href="mailto:contact.aspev24@gmail.com" className="text-accent hover:underline">contact.aspev24@gmail.com</a></p>
 
           <p className="mt-6 text-sm text-muted-foreground">Dernière mise à jour : {new Date().toLocaleDateString('fr-CA', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
         </CardContent>

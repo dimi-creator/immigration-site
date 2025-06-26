@@ -10,10 +10,10 @@ const socialLinks = [
 ];
 
 const footerNavLinks = [
-  { href: '/legal-mentions', label: 'Mentions Légales' },
-  { href: '/privacy-policy', label: 'Politique de Confidentialité' },
+  { href: '/', label: 'Accueil' },
+  { href: '/about', label: 'À propos' },
   { href: '/services', label: 'Nos Services' },
-  { href: '/contact', label: 'Contactez-nous' },
+  // { href: '/contact', label: 'Contactez-nous' },
 ];
 
 export function Footer() {
@@ -48,11 +48,12 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold font-headline mb-4 text-foreground">Contact</h3>
+            <h3 className="text-lg font-semibold font-headline mb-4 text-foreground">Légals</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
+              <li><a href="/legal-mentions" className="hover:text-primary hover:underline">Mentions Légales</a></li>
+              <li><a href="/privacy-policy" className="hover:text-primary hover:underline">Politique de Confidentialité</a></li>
               <li><a href="mailto:info@mapleleafpathways.com" className="hover:text-primary hover:underline">info@mapleleafpathways.com</a></li>
-              <li><a href="tel:+15551234567" className="hover:text-primary hover:underline">+1 (555) 123-4567</a></li>
-              <li>123 Rue Imaginaire, Ottawa, ON, Canada</li>
+             
             </ul>
           </div>
           

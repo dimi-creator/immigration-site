@@ -1,9 +1,4 @@
-import dynamic from 'next/dynamic';
-
-const ContactForm = dynamic(
-  () => import('@/components/ContactForm').then(mod => mod.ContactForm),
-  { ssr: false }
-);
+import { ContactFormWrapper } from '@/components/ContactFormWrapper';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
 import Image from 'next/image';
@@ -44,7 +39,7 @@ export default function ContactPage() {
                   <Suspense fallback={<div className="flex items-center justify-center h-64">
                     <Loader2 className="h-6 w-6 animate-spin text-accent" />
                   </div>}>
-                   <ContactForm />
+                   <ContactFormWrapper />
                   </Suspense>
                 </CardContent>
               </Card>

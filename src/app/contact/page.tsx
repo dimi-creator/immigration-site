@@ -1,6 +1,6 @@
 import { ContactForm } from '@/components/ContactForm';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
 import Image from 'next/image';
 import { Suspense } from 'react';
 
@@ -36,7 +36,9 @@ export default function ContactPage() {
                   <CardTitle className="text-2xl md:text-3xl font-bold font-headline text-primary">Envoyez-nous un message</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
-                  <Suspense fallback={<div>Chargement du formulaire...</div>}>
+                  <Suspense fallback={<div className="flex items-center justify-center h-64">
+                    <Loader2 className="h-6 w-6 animate-spin text-accent" />
+                  </div>}>
                    <ContactForm />
                   </Suspense>
                 </CardContent>

@@ -36,7 +36,9 @@ export default function ContactPage() {
                   <CardTitle className="text-2xl md:text-3xl font-bold font-headline text-primary">Envoyez-nous un message</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
-                  <ContactForm />
+                  <Suspense fallback={<div>Chargement du formulaire...</div>}>
+                   <ContactForm />
+                  </Suspense>
                 </CardContent>
               </Card>
             </div>

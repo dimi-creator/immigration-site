@@ -1,4 +1,9 @@
-import { ContactForm } from '@/components/ContactForm';
+import dynamic from 'next/dynamic';
+
+const ContactForm = dynamic(
+  () => import('@/components/ContactForm').then(mod => mod.ContactForm),
+  { ssr: false }
+);
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail, Phone, MapPin, Loader2 } from 'lucide-react';
 import Image from 'next/image';

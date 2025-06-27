@@ -8,7 +8,7 @@ export default function BlogPage() {
       <section className="relative py-20 md:py-32 bg-primary text-primary-foreground text-center">
          <div className="absolute inset-0">
             <Image 
-              src="https://placehold.co/1600x400.png" 
+              src='/BLOG.jpg'
               alt="Blog banner" 
               layout="fill" 
               objectFit="cover" 

@@ -3,7 +3,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { MapleLeafIcon } from '@/components/icons/MapleLeafIcon';
 
 const socialLinks = [
-  { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
+  { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61564623069903&name=xhp_nt__fb__action__open_user' },
   { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
   { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' },
@@ -52,7 +52,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="/legal-mentions" className="hover:text-primary hover:underline">Mentions Légales</a></li>
               <li><a href="/privacy-policy" className="hover:text-primary hover:underline">Politique de Confidentialité</a></li>
-              <li><a href="mailto:info@mapleleafpathways.com" className="hover:text-primary hover:underline">info@mapleleafpathways.com</a></li>
+              <li><a href="mailto:contact.aspev24@gmail.com" className="hover:text-primary hover:underline">info@mapleleafpathways.com</a></li>
              
             </ul>
           </div>
@@ -81,7 +81,14 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Maple Leaf Pathways. Tous droits réservés.
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            Site web conçu avec passion.
+            Site web conçu par{" "}
+            <a
+            href="mailto:raoulnguimbous534@gmail.com"
+            className="underline hover:text-primary transition-colors"
+            >
+              EPA GROUP SARL
+            </a>
+            .
           </p>
         </div>
       </div>

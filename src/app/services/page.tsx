@@ -47,7 +47,7 @@ export default function ServicesPage() {
             Notre équipe est là pour répondre à toutes vos questions et vous guider. Planifiez une consultation gratuite dès aujourd'hui pour discuter de vos besoins spécifiques.
           </p>
           <a
-            href="/contact"
+            href="mailto:contact.aspev24@gmail.com"
             className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-accent-foreground bg-accent hover:bg-accent/90"
           >
             Contactez-nous maintenant

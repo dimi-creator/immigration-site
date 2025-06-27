@@ -35,7 +35,24 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
               <div className="p-3 rounded-lg bg-primary/10 text-primary">
                 <IconComponent className="h-8 w-8" />
               </div>
-              <CardTitle className="text-3xl font-bold font-headline text-primary">{service.title}</CardTitle>
+              <div className="flex flex-col">
+                <CardTitle className="text-3xl font-bold font-headline text-primary">{service.title}</CardTitle>
+                {service.id === 'immigration-programs' && (
+                  <p className="text-xl font-semibold text-foreground mt-1">
+                     0 FCFA
+                  </p>
+                )}
+                {service.id === 'job-contract-training' && (
+                  <p className="text-xl font-semibold text-foreground mt-1">
+                     5 100 FCFA
+                  </p>
+                )}
+                {service.id === 'accompagnement' && (
+                  <p className="text-xl font-semibold text-foreground mt-1">
+                     25 000 FCFA
+                  </p>
+                )}
+              </div>
             </div>
           </CardHeader>
           <CardContent className="p-0 flex-grow">
@@ -57,23 +74,46 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
             )}
           </CardContent>
           <div className="mt-auto pt-6 border-t border-border/50">
-            <p className="text-sm text-muted-foreground mb-4">
-              Intéressé(e) par ce service ? Cliquez ci-dessous pour démarrer la discussion avec nous sur WhatsApp.
-            </p>
-            <div className="flex">
-              <Button
-                asChild
-                size="lg"
-                className="bg-green-600 hover:bg-green-700 text-white flex-1"
-              >
-                <Link
-                  href={`https://wa.me/237680345955?text=Bonjour%2C+je+suis+intéressé(e)+par+le+service+${encodeURIComponent(service.title)}`}
-                  target="_blank"
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground mb-4">
+                Intéressé(e) par ce service ? Cliquez ci-dessous pour démarrer la discussion avec nous sur WhatsApp.
+              </p>
+              <p className="text-xs text-muted-foreground">
+                En cliquant sur le bouton ci-dessous, vous acceptez nos{' '}
+                <a 
+                  href="/legal-mentions" 
+                  target="_blank" 
                   rel="noopener noreferrer"
+                  className="text-accent hover:underline"
                 >
-                  Contacter par WhatsApp 💬
-                </Link>
-              </Button>
+                  Mentions Légales
+                </a>
+                {' '}et{' '}
+                <a 
+                  href="/privacy-policy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  Politique de Confidentialité
+                </a>
+                .
+              </p>
+              <div className="flex">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-green-600 hover:bg-green-700 text-white flex-1"
+                >
+                  <Link
+                    href={`https://wa.me/237680345955?text=Bonjour%2C+je+suis+intéressé(e)+par+le+service+${encodeURIComponent(service.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contacter par WhatsApp 💬
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -97,35 +97,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team Section - Placeholder */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary mb-12">Rencontrez Notre Équipe</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12">
-            Nos experts passionnés sont prêts à vous aider. (Contenu de l'équipe à ajouter)
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="text-center shadow-lg rounded-xl overflow-hidden">
-                <Image
-                  src={`https://placehold.co/300x300.png`}
-                  alt={`Team member ${i}`}
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-56"
-                  data-ai-hint="professional portrait"
-                />
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold font-headline text-foreground mb-1">Nom du membre {i}</h3>
-                  <p className="text-sm text-accent font-medium">Titre du membre</p>
-                  <p className="text-xs text-muted-foreground mt-2">
-                    Brève description du membre de l'équipe et de son expertise.
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }

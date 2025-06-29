@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
+import { Dialog, DialogContent, DialogTrigger, DialogHeader, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { Menu, X } from 'lucide-react';
 import { MapleLeafIcon } from '@/components/icons/MapleLeafIcon'; // Assuming you create this
 import { usePathname } from 'next/navigation';
@@ -62,28 +62,31 @@ export function Navbar() {
           ))}
         </nav>
         <div className="md:hidden">
-          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-            <SheetTrigger asChild>
+          <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <DialogTrigger asChild>
               <Button variant="ghost" size="icon" aria-label="Open menu">
                 <Menu className="h-6 w-6" />
               </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
+            </DialogTrigger>
+            <DialogContent className="w-full max-w-xs bg-background p-6">
+              <DialogHeader>
+                <DialogTitle>Menu de navigation</DialogTitle>
+              </DialogHeader>
               <div className="flex flex-col space-y-6">
                 <div className="flex justify-between items-center">
                   <Link href="/" className="flex items-center gap-2 text-lg font-semibold font-headline text-primary" aria-label="Maple Leaf Pathways Home">
                      <MapleLeafIcon className="h-7 w-7 text-accent" />
-                     <span>Maple Leaf Pathways</span>
+                     <strong>Maple Leaf Pathways</strong>
                   </Link>
-                  <SheetClose asChild>
-                     <Button variant="ghost" size="icon" aria-label="Close menu">
-                       <X className="h-6 w-6" />
-                     </Button>
-                  </SheetClose>
+                  <DialogClose asChild>
+                      <Button variant="ghost" size="icon" aria-label="Close menu">
+                        <X className="h-6 w-6" />
+                      </Button>
+                  </DialogClose>
                 </div>
                 <nav className="flex flex-col space-y-3">
                   {navItems.map((item) => (
-                    <SheetClose key={item.href} asChild>
+                    <DialogClose key={item.href} asChild>
                       <Link
                         href={item.href}
                         className={cn(
@@ -93,12 +96,12 @@ export function Navbar() {
                       >
                         {item.label}
                       </Link>
-                    </SheetClose>
+                    </DialogClose>
                   ))}
                 </nav>
               </div>
-            </SheetContent>
-          </Sheet>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </header>

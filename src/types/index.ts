@@ -21,4 +21,5 @@ export interface BlogPost {
   imageUrl?: string;
   dataAiHint?: string; // For placeholder image generation
   tags?: string[];
+  views: number;
 }

@@ -23,9 +23,10 @@ export const blogPosts: BlogPost[] = [
       <h2 class="text-2xl font-headline font-semibold my-4">Que faire ?</h2>
       <p>Il est essentiel de maintenir votre profil Entrée Express à jour et d'explorer activement les Programmes des Candidats des Provinces (PCP) qui pourraient correspondre à votre profil. N'hésitez pas à nous contacter pour une évaluation personnalisée.</p>
     `,
-    imageUrl: 'https://placehold.co/800x450.png',
+    imageUrl: '/blogo.jpg',
     dataAiHint: 'Canada flag document',
     tags: ['Entrée Express', 'Immigration', 'CRS'],
+    views: 0
   },
   {
     slug: 'top-in-demand-jobs-canada-2025',
@@ -37,17 +38,18 @@ export const blogPosts: BlogPost[] = [
       <p>Le marché du travail canadien est en constante évolution. Pour 2025, plusieurs secteurs clés continuent de montrer une forte demande de travailleurs qualifiés.</p>
       <h2 class="text-2xl font-headline font-semibold my-4">Les secteurs porteurs</h2>
       <ol class="list-decimal list-inside my-4 space-y-2">
-        <li><strong>Technologie de l'information :</strong> Développeurs, analystes de données, experts en cybersécurité.</li>
+        <li><strong>Technologie de l\'information :</strong> Développeurs, analystes de données, experts en cybersécurité.</li>
         <li><strong>Soins de santé :</strong> Infirmiers, médecins, aides-soignants.</li>
         <li><strong>Métiers spécialisés :</strong> Électriciens, plombiers, soudeurs.</li>
         <li><strong>Ingénierie :</strong> Ingénieurs civils, mécaniques, électriques.</li>
         <li><strong>Services financiers :</strong> Analystes financiers, gestionnaires de comptes.</li>
       </ol>
-      <p>Adapter votre recherche d'emploi et vos compétences à ces secteurs peut grandement améliorer vos perspectives d'obtenir un contrat de travail.</p>
+      <p>Adapter votre recherche d\'emploi et vos compétences à ces secteurs peut grandement améliorer vos perspectives d\'obtenir un contrat de travail.</p>
     `,
-    imageUrl: 'https://placehold.co/800x450.png',
+    imageUrl: '/BLOG.jpg',
     dataAiHint: 'Toronto city job',
     tags: ['Emploi', 'Marché du travail', 'Canada 2025'],
+    views: 0
   },
   {
     slug: 'navigating-pnp-guide',
@@ -56,16 +58,17 @@ export const blogPosts: BlogPost[] = [
     author: 'L\'équipe Maple Leaf Pathways',
     excerpt: 'Un guide pour débutants sur le fonctionnement des PCP et comment ils peuvent accélérer votre immigration...',
     content: `
-      <p>Les Programmes des Candidats des Provinces (PCP) sont une voie d'immigration populaire offrant une alternative ou un complément au système Entrée Express fédéral.</p>
-      <h2 class="text-2xl font-headline font-semibold my-4">Qu'est-ce qu'un PCP ?</h2>
-      <p>Chaque province et territoire canadien (sauf le Québec et le Nunavut) gère ses propres programmes d'immigration pour attirer des immigrants ayant les compétences, l'éducation et l'expérience professionnelle nécessaires pour contribuer à leur économie. Une désignation provinciale peut ajouter 600 points à votre score CRS dans Entrée Express.</p>
+      <p>Les Programmes des Candidats des Provinces (PCP) sont une voie d\'immigration populaire offrant une alternative ou un complément au système Entrée Express fédéral.</p>
+      <h2 class="text-2xl font-headline font-semibold my-4">Qu\'est-ce qu\'un PCP ?</h2>
+      <p>Chaque province et territoire canadien (sauf le Québec et le Nunavut) gère ses propres programmes d\'immigration pour attirer des immigrants ayant les compétences, l\'éducation et l\'expérience professionnelle nécessaires pour contribuer à leur économie. Une désignation provinciale peut ajouter 600 points à votre score CRS dans Entrée Express.</p>
       <h2 class="text-2xl font-headline font-semibold my-4">Comment fonctionnent-ils ?</h2>
-      <p>Les PCP varient considérablement d'une province à l'autre, avec des critères d'éligibilité spécifiques. Certains sont alignés sur Entrée Express, tandis que d'autres sont des volets distincts. Il est crucial de rechercher les programmes qui correspondent le mieux à votre profil.</p>
+      <p>Les PCP varient considérablement d\'une province à l\'autre, avec des critères d\'éligibilité spécifiques. Certains sont alignés sur Entrée Express, tandis que d\'autres sont des volets distincts. Il est crucial de rechercher les programmes qui correspondent le mieux à votre profil.</p>
       <p>Nos experts peuvent vous aider à identifier les PCP les plus pertinents pour vous et à préparer une demande solide.</p>
     `,
     imageUrl: 'https://placehold.co/800x450.png',
     dataAiHint: 'Canada map provinces',
     tags: ['PCP', 'Immigration provinciale', 'Guide'],
+    views: 0
   },
 ];
 

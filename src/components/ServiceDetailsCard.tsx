@@ -15,8 +15,8 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
 
   return (
     <Card id={service.id} className="overflow-hidden shadow-xl rounded-2xl transform transition-all duration-300 hover:scale-[1.02]">
-      <div className={`grid md:grid-cols-2 items-stretch`}>
-        <div className={`relative min-h-[300px] md:min-h-full ${reverseLayout ? 'md:order-last' : ''}`}>
+      <div className={`grid sm:grid-cols-1 md:grid-cols-2 items-stretch`}>
+        <div className={`relative min-h-[200px] sm:min-h-[300px] md:min-h-full ${reverseLayout ? 'md:order-last' : ''}`}>
           {service.image && (
             <Image
               src={service.image}
@@ -29,7 +29,7 @@ export function ServiceDetailsCard({ service, reverseLayout = false }: ServiceDe
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:bg-none"></div>
         </div>
-        <div className="flex flex-col p-6 md:p-10 bg-card">
+        <div className="flex flex-col p-4 sm:p-6 md:p-10 bg-card">
           <CardHeader className="p-0 mb-4">
             <div className="flex items-center gap-3 mb-3">
               <div className="p-3 rounded-lg bg-primary/10 text-primary">

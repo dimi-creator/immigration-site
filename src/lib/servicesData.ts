@@ -23,7 +23,7 @@ export const services: Service[] = [
     shortDescription: 'Si vous souhaitez démarrer votre projet d\'immigration, Rejoignez un forum dirigé par un expert pour avoir les reponses à toutes vos questions .',
     longDescription: 'Ce service est destiné à toute personne souhaitant étudier, travailler, investir ou obtenir la résidence permanente au Canada. Nous vous accompagnons tout au long de votre parcours, offrant des conseils et astuces sur les meilleures voies d\'immigration. Le candidat aura le controle total de son dossier, nous ne prenons ni les documents personnels du candidat ni les frais de dossiers.',
     icon: FileText,
-    image: '/accompa.jpg',
+    image: '/Accomppa.jpg',
     dataAiHint: 'resume writing',
     features: [
       'Accès direct à notre groupe privé telegram',
